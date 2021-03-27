@@ -1,0 +1,56 @@
+header > div,
+main > div {
+    box-sizing: border-box;
+    max-width: 1920px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0 0 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding: 0 0 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.container-grid {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 4rem;
+    padding: 0 1rem;
+}
+
+.game-card {
+    border-radius: 1rem;
+    background: radial-gradient(circle at center, var(--color03) 0%, var(--color02) 100%);
+
+    box-shadow: 0 4px 8px var(--color04);
+}
+
+.game-card:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.game-card-media {
+    height: 15vw;
+    min-height: 150px;
+    max-height: 200px;
+    border-radius: 1rem 1rem 0 0;
+    background-position: center;
+    background-size: cover;
+}
+
+.game-card-info {
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+}

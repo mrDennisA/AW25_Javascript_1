@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/effects.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+
+    <script defer src="./js/contact.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <div>
+            <h2 class="header-title">Contact Form</h2>
+            <div class="back-icon" onclick="history.back(-1)"></div>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <div class="breadCrumbs">
+                <ul>
+                    <li><a href="./index.html" class="smalltitle">GAMES</a></li>
+                    <li class="smalltitle">CONTACT FORM</li>
+                </ul>
+            </div>
+            <div class="container">
+                <form>
+                    <div class="validateMessage">Message Sendt</div>
+                    <div class="form-input">
+                        <div>
+                            <label for="contactName">Name:</label>
+                            <input type="text" id="contactName" name="contactName">
+                            <div class="contactForm-error" id="contactName-error">Please enter your first name</div>
+                        </div>
+                        <div>
+                            <label for="contactSubject">Subject: (minimum length of 10 letters)</label>
+                            <textarea id="contactSubject" name="contactSubject"></textarea>
+                            <div class="contactForm-error" id="contactSubject-error">Subject must be at least 10 characters</div>
+                        </div>
+                        <div>
+                            <label for="contactEmail">Email:</label>
+                            <input type="text" id="contactEmail" name="contactEmail">
+                            <div class="contactForm-error" id="contactEmail-error">Please enter a valid email address</div>
+                        </div>
+                        <div>
+                            <label for="contactAddress">Address: (minimum length of 25 letters)</label>
+                            <input type="text" id="contactAddress" name="contactAddress">
+                            <div class="contactForm-error" id="contactAddress-error">Address must be at least 25 characters</div>
+                        </div>
+                        <button type="submit" id="contactButton" name=contactButton>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+  
+</body>
+</html>

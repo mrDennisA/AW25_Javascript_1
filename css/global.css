@@ -1,0 +1,91 @@
+@import url("https://use.typekit.net/waq8arq.css");
+
+:root {
+    --color01: black;
+    --color02: #332f2e;
+    --color03: #4d4745;
+    --color04: rgba(0, 0, 0, 0.5);
+    --color05: rgba(51, 47, 46, 0.9);
+    --color06: rgba(255, 255, 255, 0.5);
+    --color07: #ff4040;
+
+    --font01: futura-pt, sans-serif;
+}
+
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font01);
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html {
+    min-height: 100%;
+}
+
+body,
+header {
+    background: radial-gradient(circle at top, var(--color02) 0%, var(--color01) 100%);
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Error */
+.error {
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.error > div {
+    width: 100%;
+    max-width: 400px;
+    border: 1px var(--color07) solid;
+}
+
+.error-message {
+    text-align: center;
+    color: var(--color07);
+    padding: 0.5rem 0;
+}
+
+/* New Update */
+.breadCrumbs {
+    padding: 1rem;
+}
+.breadCrumbs ul,
+.breadCrumbs li {
+    display: flex;
+}
+.breadCrumbs li + li::before {
+    content: "\00a0/\00a0";
+}
+.breadCrumbs a:hover {
+    color: lightblue;
+    text-decoration: underline;
+}
+.breadCrumbs-gameName {
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 2rem 0;
+}
+
+.smalltitle {
+    font-size: 14px;
+    color: var(--color06);
+}
+
+@media only screen and (min-width: 813px) {
+    .container {
+        margin: 4rem 0;
+    }
+}
+
+/* {
+    box-shadow: 0 0 0 1px rgb(128, 128, 128) inset;
+}

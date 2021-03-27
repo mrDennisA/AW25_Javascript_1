@@ -1,0 +1,58 @@
+header {
+    z-index: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 8px var(--color04);
+}
+
+header > div {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.header-title {
+    flex: 1;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 0 0 2rem;
+}
+
+.form-icon,
+.back-icon {
+    width: 2rem;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-icon {
+    background-image: url(../images/noun_form_white.svg);
+}
+
+.form-icon:hover {
+    background-image: url(../images/noun_form_blue.svg);
+    transform: scale(1.1);
+}
+
+.back-icon {
+    cursor: pointer;
+    background-image: url(../images/noun_back_white.svg);
+}
+
+.back-icon:hover {
+    background-image: url(../images/noun_back_blue.svg);
+    transform: scale(1.1);
+}
+
+.form-icon:active,
+.back-icon:active {
+    transform: scale(1);
+}
+
+@media only screen and (min-width: 813px) {
+    .header-title {
+        font-size: 2rem;
+    }
+}

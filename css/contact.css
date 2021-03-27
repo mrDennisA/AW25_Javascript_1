@@ -1,0 +1,113 @@
+header > div,
+main > div {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+header > div {
+    max-width: 1920px;
+}
+
+main > div {
+    max-width: 600px;
+}
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 1px var(--color03) solid;
+    padding: 0 0 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0 0 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 400px;
+}
+
+.validateMessage {
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: transparent;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-input > div {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 0;
+}
+
+.form-input input:-webkit-autofill {
+    transition-delay: 9999s;
+}
+
+input,
+textarea {
+    font-size: 1rem;
+    background-color: unset;
+    padding: 0.5rem;
+    border: 1px dimgray solid;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px lightblue solid;
+}
+
+textarea {
+    min-height: 2rem;
+    resize: vertical;
+    overflow: hidden;
+}
+
+#contactButton {
+    color: white;
+    font-size: 1.5rem;
+    background: transparent;
+    padding: 0.5rem 0;
+    margin: 1rem;
+    border: 1px lightskyblue solid;
+    cursor: pointer;
+}
+
+#contactButton:hover {
+    color: black;
+    background: lightskyblue;
+    transition: 0.3s;
+    border: 1px transparent solid;
+}
+
+#contactButton:active {
+    transition: 0s;
+    transform: scale(0.95);
+}
+
+.contactForm-error {
+    display: block;
+    font-size: 14px;
+    color: transparent;
+    text-align: end;
+}
+
+@media only screen and (min-width: 813px) {
+    main > div {
+        max-width: 1000px;
+    }
+}
