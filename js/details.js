@@ -10,7 +10,6 @@ if (id === null) {
 }
 
 const urlID = "https://rawg-video-games-database.p.rapidapi.com/games/" + id;
-const header = { headers: { "x-rapidapi-key": "54cdafc0famsh2b62e4690ab5939p110d0ajsncad37585691f" } };
 
 async function fetchArray(url) {
     try {

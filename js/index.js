@@ -1,5 +1,5 @@
 const urlApi = "https://rawg-video-games-database.p.rapidapi.com/games";
-const header = { headers: { "x-rapidapi-key": "54cdafc0famsh2b62e4690ab5939p110d0ajsncad37585691f" } };
+
 const container = document.querySelector(".container");
 
 async function makeApiCall(url) {
